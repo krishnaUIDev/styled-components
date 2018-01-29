@@ -26,6 +26,7 @@ const Intro = styled.p`
     color: green;
 `
 
+
 class App extends Component {
   render() {
     return (
