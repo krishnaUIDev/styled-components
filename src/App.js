@@ -14,8 +14,8 @@ const Header = styled.div`
     background-color: Red;
 `
 const spin = keyframes`
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 `
 const Logo = styled.img`
      animation: ${ spin } infinite 20s linear;
