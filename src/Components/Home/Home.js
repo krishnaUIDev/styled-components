@@ -8,7 +8,8 @@ class Home extends Component {
         Firstname: "krishna",
         first: "kanth",
         Lastname: "konodju",
-        age: "23"
+        age: "23",
+        options: ['one','two']
     }
     function getLastname(Lastname){
         if (Lastname) {
@@ -18,11 +19,12 @@ class Home extends Component {
         }
     }
         return (
-           
             <div>
                 My firstname is {user.Firstname ? user.Firstname : user.first} <br/>
                 My lastname is {getLastname(user.Lastname)}
-  {(user.age && user.age <= 18) && user.age}
+                {(user.age && user.age <= 18) && user.age}
+                
+                <p>{user.options.length>0 ? 'here are your options' : 'No options'}</p>
             </div>
         )
     }
